@@ -57,6 +57,11 @@ a:hover, a:focus { color: #DE6F71; }
 #ipython_notebook img{                                                                                        
   background: url(logo.png) no-repeat;
   background-size: contain;
+  width: 233px;
+  padding-left: 233px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: center;
 }
 
 body[data-notebook-path] { background-color: #222; }
