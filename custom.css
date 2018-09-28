@@ -57,14 +57,23 @@ a:hover, a:focus { color: #DE6F71; }
 #ipython_notebook img{                                                                                        
   background: url(logo.png) no-repeat;
   background-size: contain;
-  width: 233px;
-  padding-left: 233px;
+  width: 100px;
+  padding-left: 100px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-position: center;
 }
 
-body[data-notebook-path] { background-color: #222; }
+body { 
+  background-color: #222; 
+  color: #aaa;
+}
+
+span#login_widget > .button, #logout, #shutdown {
+  color: #aaa;
+  background-color: #555;
+  border-color: #222;
+}
 
 .tabbable { color: #979797; }
 .nav-tabs { border-bottom-color: #444; }
@@ -115,6 +124,7 @@ body[data-notebook-path] { background-color: #222; }
 /* TERMINAL INTERFACE */
 .terminal-app #site { background: #272727; }
 .terminal-app .terminal { background: #141414 !important; }
+.terminal-app #header { background: #333; }
 
 /*
   Header UI styles
